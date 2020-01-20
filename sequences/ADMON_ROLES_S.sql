@@ -1,0 +1,15 @@
+USE [CMRISE]
+GO
+
+
+/****** Object:  Sequence [dbo].[ADMON_USUARIOS_S]    Script Date: 20/01/2020 15:13:00 ******/
+CREATE SEQUENCE [dbo].[ADMON_ROLES_S] 
+ AS [smallint]
+ START WITH 1
+ INCREMENT BY 1
+ MINVALUE 1
+ MAXVALUE 32767
+ NO CACHE 
+GO
+
+
