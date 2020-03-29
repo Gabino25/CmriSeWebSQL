@@ -1,7 +1,7 @@
 USE [CMRISE]
 GO
 
-/****** Object:  Table [dbo].[CC_EXAMENES]    Script Date: 27/03/2020 20:01:27 ******/
+/****** Object:  Table [dbo].[MRQS_EXAMENES]    Script Date: 27/03/2020 20:01:27 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -31,8 +31,8 @@ CREATE TABLE [dbo].[MRQS_EXAMENES](
 	[ESTATUS] [varchar](30) NOT NULL,
 	[TEMA] [varchar](30) NOT NULL,
 	[SOCIEDAD] [varchar](200) NOT NULL,
-	[FECHA_EFECTIVA_DESDE] [date] NOT NULL,
-	[FECHA_EFECTIVA_HASTA] [date] NOT NULL,
+	[FECHA_EFECTIVA_DESDE] [datetime] NOT NULL,
+	[FECHA_EFECTIVA_HASTA] [datetime] NOT NULL,
 	[CREADO_POR] [bigint] NOT NULL,
 	[FECHA_CREACION] [datetime] NOT NULL,
 	[ACTUALIZADO_POR] [bigint] NOT NULL,
@@ -40,5 +40,3 @@ CREATE TABLE [dbo].[MRQS_EXAMENES](
     CONSTRAINT [MRQS_EXAMENES_PK] PRIMARY KEY ([NUMERO])
 	) 
 GO
-
-
